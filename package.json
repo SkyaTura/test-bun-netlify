@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@netlify/build": "^29.21.1"
+    "netlify-plugin-bun": "^0.0.1"
   }
 }
