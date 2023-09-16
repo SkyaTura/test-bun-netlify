@@ -1,0 +1,13 @@
+##############################
+# Netlify configuration file #
+##############################
+
+[[plugins]]
+package = "netlify-plugin-bun"
+  [plugins.inputs]
+  basedir = "test/"
+
+[build]
+# Dummy build command
+command = "bun run build"
+publish = "test/out"

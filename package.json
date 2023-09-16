@@ -7,11 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "netlify-build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bun": "^1.0.2"
+    "@netlify/build": "^29.21.1"
   }
 }
