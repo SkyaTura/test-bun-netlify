@@ -14,7 +14,9 @@ export const onPreBuild = async function ({
     build.failBuild('Bun', { error })
   }
   try {
+    await utils.cache.restore(`${inputs.basedir}/node_modules`)
     await run('sh', ['-c' , `${cdBaseDir} && bun install`])
+    await utils.cache.save(`${inputs.basedir}/node_modules`)
     console.log('Bun dependencies installed')
   } catch (error) {
     build.failBuild('Bun install error', { error })

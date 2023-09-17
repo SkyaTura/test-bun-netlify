@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-bun",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Netlify Build plugin - Use bun as bundler and package-manager",
   "type": "module",
   "exports": "./src/index.js",
@@ -14,7 +14,9 @@
     "manifest.yml"
   ],
   "keywords": [
+    "bun",
     "netlify-plugin",
+    "netlify-bun",
     "netlify"
   ],
   "author": "Skya Tura <antonio@skyatura.com.br>",
@@ -35,7 +37,6 @@
     }
   },
   "scripts": {
-    "build": "netlify-build",
     "test": "npm run lint && npm run ava",
     "lint": "npm run eslint && npm run prettier",
     "eslint": "eslint --ignore-path .gitignore --fix --cache --format=codeframe --max-warnings=0 \"{src,init}/**/*.{cjs,mjs,js}\"",
